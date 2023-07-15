@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="awan"></div>
+    <div class="add__num">
+        <input id="numb" type="number" placeholder="Nhập Số n">
+        <button class="btn__pri" onclick="add_number()">Thêm Số</button> <br>
+        <div class="dv__list"> 👉
+            <span id="Array"></span>
+        </div>
+    </div>
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="false">
+        <div class="carousel-indicators">
+            <button data-target="#carouselExampleIndicators" data-slide-to="0" class="btn active">Bài 1</button>
+            <button data-target="#carouselExampleIndicators" data-slide-to="1" class="btn">Bài 2</button>
+            <button data-target="#carouselExampleIndicators" data-slide-to="2" class="btn">Bài 3</button>
+            <button data-target="#carouselExampleIndicators" data-slide-to="3" class="btn">Bài 4</button>
+            <button data-target="#carouselExampleIndicators" data-slide-to="4" class="btn">Bài 5</button>
+            <button data-target="#carouselExampleIndicators" data-slide-to="5" class="btn">Bài 6</button>
+            <button data-target="#carouselExampleIndicators" data-slide-to="6" class="btn">Bài 7</button>
+            <button data-target="#carouselExampleIndicators" data-slide-to="7" class="btn">Bài 8</button>
+            <button data-target="#carouselExampleIndicators" data-slide-to="8" class="btn">Bài 9</button>
+            <button data-target="#carouselExampleIndicators" data-slide-to="9" class="btn">Bài 10</button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="content">
+                    <span class="explain">Tính Tổng Số Dương</span>
+                    <button class="content__btn " onclick="sum__Array()">Tính Tổng</button> <br>
+                    <div class="result">👉
+                        <span id="sum"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="content">
+                    <span class="explain">Đếm Số Dương</span>
+                    <button class="content__btn " onclick="count__p__number()">Đếm Số</button> <br>
+                    <div class="result">👉
+                        <span id="count__p"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="content">
+                    <span class="explain">Tìm Số Nhỏ Nhất</span>
+                    <button class="content__btn " onclick="find__small__num()">Tìm Số Nhỏ Nhất</button> <br>
+                    <div class="result">👉
+                        <span id="small__n"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="content">
+                    <span class="explain">Tìm Số Dương Nhỏ Nhất</span>
+                    <button class="content__btn " onclick="find__small__p__num()">Tìm Số Dương Nhỏ Nhất</button> <br>
+                    <div class="result">👉
+                        <span id="small__p__n"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="content">
+                    <span class="explain">Tìm Số Chẵn Cuối Cùng</span>
+                    <button class="content__btn " onclick="find__e__num()">Tìm Số Chẵn</button> <br>
+                    <div class="result">👉
+                        <span id="small__e__n"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="content">
+                    <span class="explain">Đổi Chỗ</span>
+                    <div class="input__swap">
+                        <input type="text" placeholder="Nhập Vị Trí Số 1" name="" id="loca__1">
+                        <input type="text" placeholder="Nhập Vị Trí Số 2" name="" id="loca__2">
+                    </div>
+                    <button class="content__btn " onclick="swap__num()">Đổi Chỗ </button> <br>
+                    <div class="result">👉
+                        <span id="swap"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="content">
+                    <span class="explain">Sắp Xếp Tăng Dần</span>
+                    <button class="content__btn " onclick="Sort__up__increase()">Sắp Xếp</button> <br>
+                    <div class="result">👉
+                        <span id="sort"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="content">
+                    <span class="explain">Tìm Số Nguyên Tố Đầu Tiên</span>
+                    <button class="content__btn " onclick="first__prime()">Tìm Số Nguyên Tố</button> <br>
+                    <div class="result">👉
+                        <span id="prime"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="content b9">
+                    <span class="explain">Đếm Số Nguyên</span>
+                    <div class="box">
+                        <input id="n" type="number" placeholder="Nhập Số n">
+                        <button class="btn__pri" onclick="add_num()">Thêm Số</button> <br>
+                    </div>
+                    <div class="dv__list"> 👉
+                        <span id="Array1"></span>
+                    </div>
+                    <button class="content__btn " onclick="count__Integer()">Đếm Số</button> <br>
+                    <div class="result">👉
+                        <span id="integer"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="content">
+                    <span class="explain">So Sánh Số Âm và Số Dương</span>
+                    <button class="content__btn " onclick="compare__p__N()">So Sánh</button> <br>
+                    <div class="result">👉
+                        <span id="compare"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+    <script src="js.js"></script>
+</body>
+
+</html>
